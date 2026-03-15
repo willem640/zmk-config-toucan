@@ -216,7 +216,7 @@
         };
 
         esc {
-            bindings = <&hrm_left LC(LEFT_GUI) ESCAPE>;
+            bindings = <&hrm_left LS(LEFT_GUI) ESCAPE>;
             key-positions = <14 15>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
