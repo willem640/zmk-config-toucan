@@ -125,14 +125,14 @@
         };
 
         lparen {
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&hrm_right RG(RCTRL) LEFT_PARENTHESIS>;
             key-positions = <19 20>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
 
         rparen {
-            bindings = <&kp RIGHT_PARENTHESIS>;
+            bindings = <&hrm_right RG(RSHIFT) RPAR>;
             key-positions = <21 20>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
@@ -216,7 +216,7 @@
         };
 
         esc {
-            bindings = <&kp ESCAPE>;
+            bindings = <&hrm_left LC(LEFT_GUI) ESCAPE>;
             key-positions = <14 15>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
