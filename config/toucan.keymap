@@ -95,6 +95,48 @@
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
         };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <6 18>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <7 19>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+        };
+
+        star {
+            bindings = <&kp STAR>;
+            key-positions = <8 20>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+        };
+
+        ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <9 21>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+        };
+
+        lparen {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <19 20>;
+            timeout-ms = <18>;
+            require-prior-idle-ms = <150>;
+        };
+
+        rparen {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <21 20>;
+            timeout-ms = <18>;
+            require-prior-idle-ms = <150>;
+        };
     };
 
     keymap {
