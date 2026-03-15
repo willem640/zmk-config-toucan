@@ -64,26 +64,36 @@
         excl {
             bindings = <&kp EXCL>;
             key-positions = <1 13>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         at {
             bindings = <&kp AT_SIGN>;
             key-positions = <2 14>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         hash {
             bindings = <&kp HASH>;
             key-positions = <3 15>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <4 16>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
 
         percent {
             bindings = <&kp PERCENT>;
             key-positions = <17 5>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
         };
     };
 
