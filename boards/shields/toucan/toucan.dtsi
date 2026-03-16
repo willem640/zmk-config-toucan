@@ -117,4 +117,5 @@
                 &zip_scroll_transform INPUT_TRANSFORM_X_INVERT
             >;
         };
+	};
 };
