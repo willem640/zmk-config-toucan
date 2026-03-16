@@ -108,7 +108,7 @@
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&glidepoint_split>;
-        input-processors = <&zip_xy_scaler 1 6>;
+        input-processors = <&zip_xy_scaler 1 8>;
         scroller {
             layers = <1 2>;
             input-processors = <
@@ -117,23 +117,4 @@
                 &zip_scroll_transform INPUT_TRANSFORM_X_INVERT
             >;
         };
-		
-        base {
-            layers = <0>;
-            input-processors = <
-                &touch_processor    
-            >;        
-        };        
-    };
-
-    // FIXME turn on smooth scrolling
-    input_processors {
-        touch_processor: touch_processor {
-            compatible = "zmk,input-processor-behaviors";
-            #input-processor-cells = <0>;
- 
-            codes = <INPUT_BTN_TOUCH>;      // watch for the 'touch' pseudo button
-            bindings  = <&mo 4>;            // Activate Layer 4 while held &mo 4
-        };
-    };
 };
