@@ -68,6 +68,12 @@
             flavor = "balanced";
             quick-tap-ms = <175>;
         };
+		smart_mouse: smart_mouse {
+			compatible = "zmk,behavior-auto-layer";
+			#binding-cells = <1>;
+			continue-list: <&mkp LCLK  &mkp RCLK  &mkp MCLK>;
+			ignore-modifiers;
+		};
     };
 
     combos {
