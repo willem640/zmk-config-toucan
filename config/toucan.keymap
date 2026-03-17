@@ -73,7 +73,7 @@
 			compatible = "zmk,behavior-auto-layer";
 
 			#binding-cells = <1>;
-			continue-list = <&mkp LCLK &mkp RCLK &mkp MCLK>;
+			continue-list = <LCLK RCLK MCLK>;
 			ignore-modifiers;
 		};
     };
