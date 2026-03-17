@@ -267,6 +267,13 @@
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
+	
+		mouse {
+            bindings = <&smart_mouse 4>;
+            key-positions = <7 8>;
+            timeout-ms = <18>;
+            require-prior-idle-ms = <150>;
+		};
     };
 
     keymap {
