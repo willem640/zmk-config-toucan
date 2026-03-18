@@ -87,6 +87,16 @@
             require-prior-idle-ms = <150>;
             flavor = "tap-preferred";
         };
+
+        left_click_or_ctrl_click_ht: left_click_or_ctrl_click_ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LEFT_CLICK_OR_CTRL_CLICK_HT";
+            bindings = <&ctrl_left_click>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
@@ -289,6 +299,22 @@
         };
     };
 
+    macros {
+        ctrl_left_click: ctrl_left_click {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&mkp MB1>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "CTRL_LEFT_CLICK";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -322,7 +348,7 @@
 
         tap {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &left_click_or_ctrl_click_ht 0 LCLK  &trans  &trans
             >;
 
             label = "TAP";
