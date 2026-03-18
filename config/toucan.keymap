@@ -229,14 +229,14 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <2 3>;
+            key-positions = <14 15>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
 
         esc {
             bindings = <&hrm_left LS(LEFT_GUI) ESCAPE>;
-            key-positions = <14 15>;
+            key-positions = <3 2>;
             timeout-ms = <18>;
             require-prior-idle-ms = <150>;
         };
@@ -310,7 +310,7 @@
 
         tap {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &mkp MCLK
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &trans
             >;
 
             label = "TAP";
