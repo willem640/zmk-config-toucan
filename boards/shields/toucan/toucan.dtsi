@@ -93,6 +93,11 @@
 };
 
 / {
+    /omit-if-no-ref/ zip_temp_tap_layer: zip_temp_tap_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        excluded-positions = <RH0 RB0 RM0>;
+    };
     split_inputs {
         #address-cells = <1>;
         #size-cells = <0>;
@@ -114,6 +119,7 @@
                 &zip_xy_to_scroll_mapper
                 &zip_scroll_scaler 1 3
                 &zip_scroll_transform INPUT_TRANSFORM_X_INVERT
+				&zip_temp_tap_layer 4 2000
             >;
         };
     };
