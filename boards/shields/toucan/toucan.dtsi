@@ -96,7 +96,7 @@
     /omit-if-no-ref/ zip_temp_tap_layer: zip_temp_tap_layer {
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
-        excluded-positions = <RH0 RB0 RM0>;
+        excluded-positions = <6 18 30 39>; // the vertical column of keys next to the trackpad and the leftmost thumb key on the right half
     };
     split_inputs {
         #address-cells = <1>;
