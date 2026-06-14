@@ -28,5 +28,6 @@ manifest:
       remote: urob
     - name: zmk-input-processor-scroll-inertia
       remote: mjmjm0101
+      revision: main # AI-generated code, probably a source of bugs in the future
   self:
     path: config
