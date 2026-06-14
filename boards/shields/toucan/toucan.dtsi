@@ -112,13 +112,13 @@
         compatible = "zmk,input-processor-scroll-inertia";
         #input-processor-cells = <0>;
 		axis      = <0>;          /* both axes — diagonal scroll allowed */
-		layer     = <1>;          /* free 2D scroll layer (e.g. canvas pan) */
+		layer     = <-1>;          /* free 2D scroll layer (e.g. canvas pan) */
 		scale     = <1>;
 		scale-div = <2>;
 		start     = <7>;
 		move      = <14>;
 		friction  = <10>;
-		stop      = <1>;
+		stop      = <0>;
 		status = "disabled";
     };
 
