@@ -115,8 +115,8 @@
 		layer     = <1>;          /* free 2D scroll layer (e.g. canvas pan) */
 		scale     = <1>;
 		scale-div = <2>;
-		start     = <20>;
-		move      = <40>;
+		start     = <10>;
+		move      = <20>;
 		status = "disabled";
     };
 
