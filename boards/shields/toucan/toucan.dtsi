@@ -108,15 +108,23 @@
         };
     };
 
+	scroll_inertia_free: scroll_inertia_free {
+        compatible = "zmk,input-processor-scroll-inertia";
+        #input-processor-cells = <0>;
+        axis      = <0>;          /* both axes — diagonal scroll allowed */
+        layer     = <1 2>;          /* free 2D scroll layer (e.g. canvas pan) */
+        scale     = <1>;
+        scale-div = <2>;
+    };
+
     glidepoint_listener: glidepoint_listener {
         compatible = "zmk,input-listener";
-        status = "disabled";
-        device = <&glidepoint_split>;
         input-processors = <&zip_xy_scaler 250 100 &zip_temp_tap_layer 4 1000>;
         scroller {
             layers = <1 2>;
             input-processors = <
                 &zip_xy_to_scroll_mapper
+				&scroll_inertia_free
                 &zip_scroll_scaler 1 2
                 &zip_scroll_transform INPUT_TRANSFORM_X_INVERT
             >;
