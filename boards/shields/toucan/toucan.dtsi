@@ -115,8 +115,10 @@
 		layer     = <1>;          /* free 2D scroll layer (e.g. canvas pan) */
 		scale     = <1>;
 		scale-div = <2>;
-		start     = <10>;
-		move      = <20>;
+		start     = <7>;
+		move      = <14>;
+		friction  = <15>;
+		stop      = <3>;
 		status = "disabled";
     };
 
