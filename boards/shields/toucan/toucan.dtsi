@@ -118,6 +118,7 @@
 		move      = <14>;
 		friction  = <10>;
 		stop      = <1>;
+		limit     = <6000>;
 		status = "disabled";
     };
 
