@@ -117,8 +117,8 @@
 		scale-div = <2>;
 		start     = <7>;
 		move      = <14>;
-		friction  = <15>;
-		stop      = <3>;
+		friction  = <10>;
+		stop      = <1>;
 		status = "disabled";
     };
 
