@@ -13,7 +13,7 @@ manifest:
     - name: urob
       url-base: https://github.com/urob
     - name: mjmjm0101
-      url-base: https://github.com/mjmjm0101
+      url-base: https://github.com/willem640
 
   projects:
     - name: zmk
