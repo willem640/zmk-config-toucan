@@ -46,3 +46,7 @@ nice_view_spi: &spi0 {
 &glidepoint_listener {
     status = "okay";
 };
+
+&scroll_inertia_free {
+	status = "okay";
+};
