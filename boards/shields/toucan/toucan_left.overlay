@@ -51,6 +51,3 @@ nice_view_spi: &spi0 {
     status = "okay";
 };
 
-&scroll_inertia_free {
-	status = "okay";
-};
