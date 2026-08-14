@@ -63,7 +63,7 @@
         sensitivity = <100>;
         scroll-sensitivity = <100>;
 
-        filter-settings=<0x0B>;
+        filter-settings=<0x0F>;
         hold-time = <500>;
 
         zoom;
@@ -75,7 +75,6 @@
         three-finger-swipe;
         three-finger-swipe-throttle-ms = <1200>;
         switch-xy;
-        invert-scroll-y;
 
     };
 };
